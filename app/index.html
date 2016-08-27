@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>www</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+      <div class="container">
+
+        <section class="contact">
+          <div class="photo-left"></div>
+
+          <div class="info-right">
+            <div class="approved"></div>
+            
+            <span>валерий</span>
+            
+            <span>03.06.1979</span>
+            
+            <span>киев</span>
+            
+            <span><a href="http://uwebmaster.xyz">http://uwebmaster.xyz</a></span>
+          </div>
+        </section>
+
+        <section class="skills">
+          <h6>Навыки</h6>
+          <div class="skills__flex_container">
+            <div class="skills__flex_container-item">
+              <input id="html5" type="checkbox" checked>
+              <label for="html5">html5</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="sass" type="checkbox" checked>
+              <label for="sass">sass</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="vjs" type="checkbox">
+              <label for="vjs">vanillajs</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="git" type="checkbox" checked>
+              <label for="git">git</label>
+            </div>
+          </div>
+
+          <div class="skills__flex_container">
+            <div class="skills__flex_container-item">
+              <input id="css3" type="checkbox" checked>
+              <label for="css3">css3</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="less" type="checkbox">
+              <label for="less">less</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="angular" type="checkbox">
+              <label for="angular">angular</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="foundation" type="checkbox">
+              <label for="foundation">foundation</label>
+            </div>
+          </div>
+
+          <div class="skills__flex_container">
+            <div class="skills__flex_container-item">
+              <input id="bem" type="checkbox">
+              <label for="bem">бэм</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="gulp" type="checkbox" checked>
+              <label for="gulp">gulp</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="jquery" type="checkbox" checked>
+              <label for="jquery">jquery</label>
+            </div>
+
+            <div class="skills__flex_container-item">
+              <input id="bootstrap" type="checkbox" checked>
+              <label for="bootstrap">bootstrap</label>
+            </div>
+          </div>
+        </section>
+
+        <section class="chart">
+          <div class="chart-left">
+            <div id="chart-container"></div>
+
+            <div class="chart-arrow">
+              <img src="images/arrow.png" alt="arrow image">
+            </div>
+          </div>
+
+          <div class="chart-right">
+            <h6>Мой уровень владения</h6>
+            <h6>Java Script</h6>
+            <span id="counter"></span>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="/bower_components/jquery/dist/jquery.js"></script>
+      <script src="/bower_components/highcharts/highcharts.js"></script>
+      <script src="/bower_components/highcharts/highcharts-more.js"></script>
+      <script src="/bower_components/highcharts/modules/exporting.js"></script>
+      <script src="/bower_components/countUp.js/dist/countUp.min.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js scripts/main.js -->
+      <script src="scripts/main.js"></script>
+      <!-- endbuild -->
+    </body>
+    </html>

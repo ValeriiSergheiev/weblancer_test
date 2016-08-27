@@ -1,0 +1,13 @@
+{
+  "name": "www",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "highcharts": "^4.2.6",
+    "countUp.js": "^1.7.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}

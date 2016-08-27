@@ -1,0 +1,181 @@
+// bower:scss
+// endbower
+
+@import 'fonts';
+@import 'mixins';
+@import 'vars';
+
+body {
+  background: $body-bg;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  //min-width: 660px;
+  margin: 0;
+  padding: 0;
+  color: $body-color;
+}
+
+#transmark {
+  display: none;
+}
+
+.container {
+  width: 660px;
+  //min-width: 660px;
+  margin: 60px auto;
+  background-color: $container-bg;
+}
+
+// Contact section #################################
+.contact {
+  @include clearfix;
+  height: calc(250px - 62px);
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  padding: 30px 20px;
+  border-bottom: 2px solid $body-bg;
+}
+
+.photo-left {
+  float: left;
+  display: inline-block;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url('../images/photo.jpg');
+}
+
+.info-right {
+  float: right;
+  position: relative;
+  width: 460px;
+  span {
+    display: block;
+    font-size: 12px;
+    border-bottom: 2px solid #333;
+    color: $text-color;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 28px;
+    a, a:visited {
+      text-decoration: none;
+      color: inherit;
+      font-size: 14px;
+    }
+    a:hover {
+      opacity: .7;
+    }
+    &:last-child {
+      text-transform: none;
+    }
+  } 
+}
+
+.approved {
+  position: absolute;
+  top: 41px;
+  right: -15px;
+  background-image: url('../images/approved.png');
+  background-size: cover;
+  width: 184px;
+  height: 166px;
+  overflow: hidden;
+}
+// End Contact section #################################
+
+// Skill section #################################
+.skills {
+  @extend .contact;
+  h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.skills__flex_container {
+  display: flex;
+  margin-top: 33px;
+}
+
+.skills__flex_container-item {
+  flex:1;
+}
+
+input[type=checkbox] {
+  display: none;
+  & + label {
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    color: $text-color;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-left: 30px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: -2px;
+      left: -30px;
+      height: 19px;
+      width: 19px;
+      border-radius: 5px;
+      background-color: #eee;
+    }
+  }
+  &:checked + label::before {
+    background-image: url('../images/check.png');
+    background-size: cover;
+  }
+}
+
+
+// End Skill section #################################
+
+// Chart section #################################
+.chart {
+  @extend .contact;
+}
+
+.chart-left {
+  position: relative;
+  float: left;
+  height: 130px;
+}
+
+.chart-arrow {
+  position: absolute;
+  transform: rotate(110deg);
+  left: 44%;
+  bottom: 0;
+  animation: arrow-animation 1500ms ease-in;
+}
+
+@keyframes arrow-animation {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.chart-right {
+  float: right;
+  margin-right: 100px;
+  h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+  }
+  span {
+    display: block;
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: .05em;
+    color: #0093d7;
+    vertical-align: top;
+  }
+}
+// End Chart section #################################
+
